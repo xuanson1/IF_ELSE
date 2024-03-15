@@ -5,18 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-<p>Nhập tuổi</p>
-<input id="d" type="number">
-<button onclick="checkAge()">Check</button>
+
 <script >
-    function checkAge(){
-        let d = +document.getElementById("d").value;
-        if(d>=18)
+        let namSinh = prompt("Nhập vào năm sinh");
+        let Age = 2024-namSinh;
+        if(Age>=18)
             document.write("Đã đủ tuổi.");
         else
             document.write("Chưa đủ tuổi.");
-        document.getElementById("result").innerHTML= d ;
-    }
 </script>
 </body>
 </html>
